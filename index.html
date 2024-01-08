@@ -71,6 +71,7 @@
         height: 100%;
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
 
       .header {
@@ -78,8 +79,29 @@
         max-height: min-content;
         padding-inline: 250px;
       }
-      .gradient{
-        
+      .gradient {
+        background: linear-gradient(to right, rgb(2, 70, 2), red);
+      }
+      .market {
+        background-image: url(https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F4cb3500ec84c551d3fa54bd33c883d5ec9e4edd0%2FSamurai_journey_5_round_very_thin_glass_slides_in_a_empty_space_595225af-aa78-4afc-ace0-0034687568d7.png?auto=compress,format&fit=clip&w=1600);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .friend {
+        background-image: url(https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F664b9cc58c9992e12f9102bd6e963de9b3a23331%2FAdobeStock_163995831.jpeg?auto=compress,format&fit=clip&w=768);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .overlay {
+        background: rgba(7, 42, 64, 0.86);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        bottom: 0;
+        top: 0;
       }
     </style>
     <style id="vvvebjs-styles"></style>
@@ -114,192 +136,601 @@
 
     <!-- header section1 -->
     <section class="header">
-      <div class="container-fluid d-flex flex-column justify-content-center align-items-center" style="margin-bottom: 200px;">
+      <div
+        class="container-fluid d-flex flex-column justify-content-center align-items-center"
+        style="margin-bottom: 200px"
+      >
         <div class="para1">
-        <div class="Neocast-img"></div>
-        <div class="Neocast_content">
-          <div
-            class="text-white d-flex justify-content-around align-content-center p-2"
-            style="width: 400px; height: 100px; border: 2px solid white"
-          >
-            <a class="text-decoration-none text-white fs-3" href="">Support</a>
-            <a class="text-decoration-none text-white fs-3" href="">Buy Now</a>
+          <div class="Neocast-img"></div>
+          <div class="Neocast_content">
+            <div
+              class="text-white d-flex justify-content-around align-content-center p-2"
+              style="
+                width: 400px;
+                min-height: max-content;
+                border: 2px solid white;
+              "
+            >
+              <a class="text-decoration-none text-white fs-3" href=""
+                >Support</a
+              >
+              <a class="text-decoration-none text-white fs-3" href=""
+                >Buy Now</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-     
 
-      <!-- para2 -->
-      <div
-        class=""
-        style="
-          height: 50px;
-          width: 80%;
-          border: 1px solid whitesmoke;
-          border-radius: 50px;
-        "
-      >
-        <p class="text-white text-center fs-4">
-          Imagine Owning Your Very Own TV Channel Without All The Hassle
-        </p>
-      </div>
+        <!-- para2 -->
+        <div
+          class=""
+          style="
+            min-height: max-content;
+            width: 80%;
+            border: 1px solid whitesmoke;
+            border-radius: 50px;
+          "
+        >
+          <p class="text-white text-center fs-4">
+            Imagine Owning Your Very Own TV Channel Without All The Hassle
+          </p>
+        </div>
 
-      <!-- para3 -->
-      <div>
-        <h2 class="fs-1 fw-bolder text-white text-center p-4">
-          World’s First “AI” App That Lets Us Own A TV Channel That Gets
-          Millions Of Views…
-        </h2>
-      </div>
+        <!-- para3 -->
+        <div>
+          <h2 class="fs-1 fw-bolder text-white text-center p-4">
+            World’s First “AI” App That Lets Us Own A TV Channel That Gets
+            Millions Of Views…
+          </h2>
+        </div>
 
-      <!-- para4 -->
-      <div class="bg-warning" style="height: 100px; width: 70%">
-        <div class="para4_content text-center">
-          <p class="text-black" style="font-size: 50px">
-            And Pays Us <span class="text-danger"> $856.45 Daily</span>
+        <!-- para4 -->
+        <div class="bg-warning" style="min-height: max-content; width: 70%">
+          <div class="para4_content text-center">
+            <p class="text-black" style="font-size: 50px">
+              And Pays Us <span class="text-danger"> $856.45 Daily</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- para5 -->
+        <div>
+          <h2 class="fs-1 fw-bolder text-white p-4">For Sponsoring Ads</h2>
+        </div>
+
+        <!-- para6 -->
+        <div>
+          <p class="fs-3 fw-bold text-white p-4">
+            All Without Creating Or Streaming Anything
+          </p>
+        </div>
+
+        <!-- para7 -->
+        <div>
+          <p class="fs-4 text-white">
+            Without Studio - Without Equipment - Without fees - Without
+            Marketing
+          </p>
+        </div>
+
+        <!-- para8 -->
+        <div>
+          <p class="fs-4 text-info">
+            Built-In views Generator | Built-In Feed | Built-In Sponsors
+          </p>
+        </div>
+
+        <!-- para9 -->
+        <div>
+          <p class="fs-4 text-center text-white">
+            Click Play And Watch How We Are Able To Get 3.6 Million Views And
+            Earn $32,456.56 In Under 30 Days…
           </p>
         </div>
       </div>
 
-      <!-- para5 -->
-      <div>
-        <h2 class="fs-1 fw-bolder text-white p-4">For Sponsoring Ads</h2>
-      </div>
+      <!-- section2 -->
 
-      <!-- para6 -->
-      <div>
-        <p class="fs-3 fw-bold text-white p-4">
-          All Without Creating Or Streaming Anything
-        </p>
-      </div>
-
-      <!-- para7 -->
-      <div>
-        <p class="fs-4 text-white">
-          Without Studio - Without Equipment - Without fees - Without Marketing
-        </p>
-      </div>
-
-      <!-- para8 -->
-      <div>
-        <p class="fs-4 text-info">
-          Built-In views Generator | Built-In Feed | Built-In Sponsors
-        </p>
-      </div>
-      
-      <!-- para9 -->
-      <div>
-        <p class="fs-4 text-center text-white">
-          Click Play And Watch How We Are Able To Get 3.6 Million Views And Earn $32,456.56 In Under 30 Days… 
-        </p>
-      </div>
-    </div>
-  
-
-    <!-- section2 -->
-  
-    <div class="section2 d-flex flex-column align-items-center pb-5">
+      <div class="section2 d-flex flex-column align-items-center pb-5">
         <!-- part1 -->
-      <div
-      class="part1 mb-5"
-      style="
-        height: 90px;
-        width: 80%;
-        border: 1px solid whitesmoke;
-        border-radius: 50px;
-      "
-    >
-      <p class="text-white text-center fs-5">
-        First 99 Action Taker Get Instant Access To NeoCast “5 Done-For-You” Channels + Instant Sponsorship 
-        (Average User Saw 400% Increase In Profit (worth $1,997)
-      </p>
-    </div>
+        <div
+          class="part1 mb-5"
+          style="
+            min-height: max-content;
+            width: 80%;
+            border: 1px solid whitesmoke;
+            border-radius: 50px;
+          "
+        >
+          <p class="text-white text-center fs-5">
+            First 99 Action Taker Get Instant Access To NeoCast “5 Done-For-You”
+            Channels + Instant Sponsorship (Average User Saw 400% Increase In
+            Profit (worth $1,997)
+          </p>
+        </div>
 
-    <!-- part2 -->
-    <div class="part2 align-items-center">
-      <div
-      class=" p-4"
-      style="
-        height: 500px;
-        width: 100%;
-        border: 1px solid darkcyan;
-        border-radius: 50px;
-      "
-    >
-    <div class="text_section d-flex">
-      <div class="part1">
-      <ul class="text-white fs-4 ">
-        <li>Start Your TV Empire With ZERO Hassle</li>
-      </ul>
-     
-      <ul class="text-white fs-4 fw-bold d-flex justify-content-between">
-        <li class="">Generate Millions Of Views On-Demand In Any Niche…</li>
-      </ul>
+        <!-- part2 -->
+        <div class="part2 align-items-center">
+          <div
+            class="p-4"
+            style="
+              min-height: max-content;
+              width: 100%;
+              border: 1px solid darkcyan;
+              border-radius: 50px;
+            "
+          >
+            <div class="text_section d-flex">
+              <div class="part1">
+                <ul class="text-white fs-4">
+                  <li>Start Your TV Empire With ZERO Hassle</li>
+                </ul>
 
-      <ul class="text-white fs-4 ">
-        <li>Promote Your Links Or Sell Ads From Day 1</li>
-      </ul>
+                <ul
+                  class="text-white fs-4 fw-bold d-flex justify-content-between"
+                >
+                  <li class="">
+                    Generate Millions Of Views On-Demand In Any Niche…
+                  </li>
+                </ul>
 
-      <ul class="text-white fs-4 fw-bold d-flex justify-content-between">
-        <li class="">No Streaming And No Content Creation.</li>
-      </ul>
+                <ul class="text-white fs-4">
+                  <li>Promote Your Links Or Sell Ads From Day 1</li>
+                </ul>
 
-      <ul class="text-white fs-4 ">
-        <li>332 Beta-Tester Launched Their Channels And Made $132,456.34 Combined</li>
-      </ul>
-      <ul class="text-white fs-4 fw-bold d-flex justify-content-between">
-        <li class="">No Complicated Setup - Get Up And Running In 2 Minutes</li>
-      </ul>
-    </div>
+                <ul
+                  class="text-white fs-4 fw-bold d-flex justify-content-between"
+                >
+                  <li class="">No Streaming And No Content Creation.</li>
+                </ul>
 
-    <!-- part2 -->
-    <div class="part2">
-      <ul class="text-white fs-4 ">
-        <li>Works In ANY Niche Whatsoever.</li>
-      </ul>
-      <ul class="text-white fs-4 fw-bold d-flex justify-content-between">
-        <li class="">ZERO monthly Or Hidden Fees</li>
-      </ul>
-   
-      <ul class="text-white fs-4 ">
-        <li>Generate Hot Leads In Any Niche With A Simple Click</li>
-      </ul>
+                <ul class="text-white fs-4">
+                  <li>
+                    332 Beta-Tester Launched Their Channels And Made $132,456.34
+                    Combined
+                  </li>
+                </ul>
+                <ul
+                  class="text-white fs-4 fw-bold d-flex justify-content-between"
+                >
+                  <li class="">
+                    No Complicated Setup - Get Up And Running In 2 Minutes
+                  </li>
+                </ul>
+              </div>
 
-      <ul class="text-white fs-4 fw-bold d-flex justify-content-between">
-        <li class="">Affiliate Friendly Platform</li>
-      </ul>
-      <ul class="text-white fs-4 ">
-        <li>99.99% Up Time Guaranteed</li>
-      </ul>
+              <!-- part2 -->
+              <div class="part2">
+                <ul class="text-white fs-4">
+                  <li>Works In ANY Niche Whatsoever.</li>
+                </ul>
+                <ul
+                  class="text-white fs-4 fw-bold d-flex justify-content-between"
+                >
+                  <li class="">ZERO monthly Or Hidden Fees</li>
+                </ul>
 
-      <ul class="text-white fs-4 ">
-        <li>ZERO Upfront Cost</li>
-      </ul>
-    </div>
+                <ul class="text-white fs-4">
+                  <li>Generate Hot Leads In Any Niche With A Simple Click</li>
+                </ul>
 
-    </div>
-    <ul class=" text-white fs-4">
-      <li class="text-center">365 Days Money-Back Guarantee</li>
-     </ul>
-    </div>
-    </div>
-    </div>
+                <ul
+                  class="text-white fs-4 fw-bold d-flex justify-content-between"
+                >
+                  <li class="">Affiliate Friendly Platform</li>
+                </ul>
+                <ul class="text-white fs-4">
+                  <li>99.99% Up Time Guaranteed</li>
+                </ul>
+
+                <ul class="text-white fs-4">
+                  <li>ZERO Upfront Cost</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="text-white fs-4">
+              <li class="text-center">365 Days Money-Back Guarantee</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-
-
 
     <!-- Page Content1 -->
 
     <section class="">
-      <div class="gradient" style="width: 100%; height: 400px; background-color: red; border: 2px solid wheat;">
+      <div
+        class="gradient d-flex flex-column align-items-center"
+        style="
+          width: 100%;
+          min-height: max-content;
+          border: 2px solid wheat;
+          padding-inline: 200px;
+        "
+      >
+        <div class="pt-5 pb-3">
+          <h2 class="fs-1 text-white fw-bolder">
+            Get <span class="fs-1 text-white fw-lighter">Neo</span>Cast And Save
+            $281 Now
+          </h2>
+          <p class="fs-2 text-white text-center fw-bold">
+            Just Pay Once Instead Of Monthly
+          </p>
+        </div>
 
+        <!-- part2 -->
+        <div
+          class="text-white align-content-center p-3"
+          style="
+            width: 60%;
+            min-height: max-content;
+            border: 2px solid white;
+            background: linear-gradient(to right, yellow, red);
+            border-radius: 10px;
+          "
+        >
+          <a
+            class="text-decoration-none text-white fs-1 fw-bold text-center"
+            href=""
+            >Click Here Now To Get Started</a
+          >
+        </div>
+
+        <!-- part3 -->
+        <div class="d-flex justify-content-between p-5">
+          <div class="img-fluid">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fd855ee81bfa4c0099568536f98939192b19e41e3%2F180day2.png?auto=compress,format&fit=scale&w=521&h=126"
+              alt="img"
+            />
+          </div>
+          <div
+            class="black-box bg-black"
+            style="width: 200px; height: 100px"
+          ></div>
+        </div>
       </div>
-
     </section>
 
+    <!-- yellow -->
+    <section class="w-100 bg-warning" style="width: 100%; height: 80px">
+      <div class="" style="padding-inline: 200px">
+        <p class="text-black fs-4 fw-bold text-center pt-3 pb-3">
+          Free Commercial License + 1 Time Low Price ENDS When Timer Hits ZERO
+        </p>
+      </div>
+    </section>
+    <!--Marketers  -->
+    <section
+      class="w-100 bg-warning market"
+      style="width: 100%; height: 1400px; position: relative"
+    >
+      <div class="overlay">
+        <div class="market_container mb-5">
+          <div
+            class="d-flex flex-column align-items-center justify-content-around mt-5 justify-content-center"
+          >
+            <h2 class="fs-2 text-white">
+              NeoCast Is Used By 3,000+ Marketers WorldWide
+            </h2>
 
+            <h1 class="fs-1 text-white fw-bolder">
+              To Create Their Tv-Channels And Get Millions Of Clicks…
+            </h1>
 
+            <p class="fs-4 text-danger">And You Can Join Them In 10 Seconds</p>
+          </div>
+        </div>
 
+        <!-- people1 -->
+        <div class="container-fluid mb-5" style="padding-inline: 50px">
+          <div class="d-flex justify-content-between flex-wrap">
+            <div
+              class="rounded p-4"
+              style="
+                width: 450px;
+                height: 450px;
+                background-color: rgb(39, 39, 65);
+              "
+            >
+              <div class="img-fluid text-center p-2 mb-3">
+                <img
+                  src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fa563319719f911a911ffe4f909503c797a27555d%2Favatar-11091c507dc68aeb224d813fbf8c4dae.jpg?auto=compress,format&fit=scale&w=138&h=143"
+                  alt="liam"
+                />
+              </div>
+              <h3 class="text-info text-center">Liam N.</h3>
+              <div>
+                <p class="fs-6 text-white fw-semibold">
+                  This is by far the easiest app i have used, The dashboard is
+                  very intuitive and user-friendly Not only that, its the only
+                  app that got me REAL results.
+                </p>
+                <p class="fs-6 text-white fw-semibold">
+                  I started using it a week ago, to date i got about 12,000
+                  clicks
+                </p>
+                <p class="fs-6 text-white fw-semibold">Thanks guys</p>
+              </div>
+            </div>
+            <!-- card2 -->
+            <div
+              class="rounded p-4"
+              style="
+                width: 450px;
+                height: 450px;
+                background-color: rgb(39, 39, 65);
+              "
+            >
+              <div class="img-fluid text-center p-2 mb-3">
+                <img
+                  src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F9b9744828c1835e9f3f97622ec641164a25979f4%2Favatar-1133858f4ba3fcca6198a3994029adac.jpg?auto=compress,format&fit=scale&w=138&h=138"
+                  alt="liam"
+                />
+              </div>
+              <h3 class="text-info text-center">Marlyin C.</h3>
+              <div>
+                <p class="fs-6 text-white fw-semibold">
+                  TI never thought i would start my own tv channel, but here I’m
+                  owning 6 hahaha Best part is, its 100% automated.
+                </p>
+                <p class="fs-6 text-white fw-semibold">
+                  I don’t need to do or buy anything
+                </p>
+                <p class="fs-6 text-white fw-semibold">
+                  This is a game-changer
+                </p>
+              </div>
+              s
+            </div>
+            <!-- card3 -->
+            <div
+              class="rounded p-4"
+              style="
+                width: 450px;
+                height: 450px;
+                background-color: rgb(39, 39, 65);
+              "
+            >
+              <div class="img-fluid text-center p-2 mb-3">
+                <img
+                  src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fa563319719f911a911ffe4f909503c797a27555d%2Favatar-11091c507dc68aeb224d813fbf8c4dae.jpg?auto=compress,format&fit=scale&w=138&h=143"
+                  alt="liam"
+                />
+              </div>
+              <h3 class="text-info text-center">Tiana G.</h3>
+              <div>
+                <p class="fs-6 text-white fw-semibold">
+                  I never wanted to own a tv channel, but i saw on the sales
+                  page that it was a very easy way to make money So i decided to
+                  give it a go.
+                </p>
+                <p class="fs-6 text-white fw-semibold">
+                  And im so happy I did, so far, i made $9,944.45 in PURE PROFIT
+                </p>
+                <p class="fs-6 text-white fw-semibold">All in under a month</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- people2 -->
+        <div class="container-fluid mb-5" style="padding-inline: 50px">
+          <div class="d-flex justify-content-between flex-wrap">
+            <div
+              class="rounded p-4"
+              style="
+                width: 450px;
+                height: 450px;
+                background-color: rgb(39, 39, 65);
+              "
+            >
+              <div class="img-fluid text-center p-2 mb-3">
+                <img
+                  src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fa563319719f911a911ffe4f909503c797a27555d%2Favatar-11091c507dc68aeb224d813fbf8c4dae.jpg?auto=compress,format&fit=scale&w=138&h=143"
+                  alt="liam"
+                />
+              </div>
+              <h3 class="text-info text-center">Liam N.</h3>
+              <div>
+                <p class="fs-6 text-white fw-semibold">
+                  This is by far the easiest app i have used, The dashboard is
+                  very intuitive and user-friendly Not only that, its the only
+                  app that got me REAL results.
+                </p>
+                <p class="fs-6 text-white fw-semibold">
+                  I started using it a week ago, to date i got about 12,000
+                  clicks
+                </p>
+                <p class="fs-6 text-white fw-semibold">Thanks guys</p>
+              </div>
+            </div>
+            <!-- card2 -->
+            <div
+              class="rounded p-4"
+              style="
+                width: 450px;
+                height: 450px;
+                background-color: rgb(39, 39, 65);
+              "
+            >
+              <div class="img-fluid text-center p-2 mb-3">
+                <img
+                  src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F9b9744828c1835e9f3f97622ec641164a25979f4%2Favatar-1133858f4ba3fcca6198a3994029adac.jpg?auto=compress,format&fit=scale&w=138&h=138"
+                  alt="liam"
+                />
+              </div>
+              <h3 class="text-info text-center">Marlyin C.</h3>
+              <div>
+                <p class="fs-6 text-white fw-semibold">
+                  TI never thought i would start my own tv channel, but here I’m
+                  owning 6 hahaha Best part is, its 100% automated.
+                </p>
+                <p class="fs-6 text-white fw-semibold">
+                  I don’t need to do or buy anything
+                </p>
+                <p class="fs-6 text-white fw-semibold">
+                  This is a game-changer
+                </p>
+              </div>
+              s
+            </div>
+            <!-- card3 -->
+            <div
+              class="rounded p-4"
+              style="
+                width: 450px;
+                height: 450px;
+                background-color: rgb(39, 39, 65);
+              "
+            >
+              <div class="img-fluid text-center p-2 mb-3">
+                <img
+                  src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fa563319719f911a911ffe4f909503c797a27555d%2Favatar-11091c507dc68aeb224d813fbf8c4dae.jpg?auto=compress,format&fit=scale&w=138&h=143"
+                  alt="liam"
+                />
+              </div>
+              <h3 class="text-info text-center">Tiana G.</h3>
+              <div>
+                <p class="fs-6 text-white fw-semibold">
+                  I never wanted to own a tv channel, but i saw on the sales
+                  page that it was a very easy way to make money So i decided to
+                  give it a go.
+                </p>
+                <p class="fs-6 text-white fw-semibold">
+                  And im so happy I did, so far, i made $9,944.45 in PURE PROFIT
+                </p>
+                <p class="fs-6 text-white fw-semibold">All in under a month</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Neocast works -->
+    <section
+      class=""
+      style="background-color: rgb(26, 26, 88); height: 100%; width: 100%"
+    >
+      <div
+        class="d-flex flex-column align-items-center justify-content-between"
+        style="padding-inline: 200px"
+      >
+        <div class="text">
+          <h2 class="pt-5 pb-5 fw-bold fs-1 text-info">
+            NeoCast Works In 4 Easy Steps…
+          </h2>
+        </div>
+        <!-- part1 -->
+        <div
+          class="card rounded-2 p-3"
+          style="height: 200px; width: 500px; position: relative"
+        >
+          <p class="fs-5 fw-bold">Step 1 Access.</p>
+          <p class="fs-5 fw-bold me-5">
+            Click on any of the links to get instant access to NeoCast
+          </p>
+          <img
+            class="ms-5"
+            style="height: 200px; width: 800px; position: absolute; top: 0"
+            src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fb0f61a8692ec5ae18024b130825463618cd289c3%2Ficon%20on%20black.svg"
+            alt="img"
+          />
+        </div>
+        <!-- part2 -->
+        <div
+          class="card rounded-2 p-3"
+          style="height: 200px; width: 500px; position: relative"
+        >
+          <!-- <img class="ms-5"  style="height: 200px; width: 200px; position: absolute; top: 0; left: 0; "   src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fb0f61a8692ec5ae18024b130825463618cd289c3%2Ficon%20on%20black.svg" alt="img"/> -->
+          <p class="fs-5 fw-bold">Step 1 Access.</p>
+          <p class="fs-5 fw-bold me-5">
+            Click on any of the links to get instant access to NeoCast
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- pagecontent2 -->
+    <section class="">
+      <div
+        class="gradient d-flex flex-column align-items-center"
+        style="
+          width: 100%;
+          min-height: max-content;
+          border: 2px solid wheat;
+          padding-inline: 200px;
+        "
+      >
+        <div class="pt-5 pb-3">
+          <h2 class="fs-1 text-white fw-bolder">
+            Get <span class="fs-1 text-white fw-lighter">Neo</span>Cast And Save
+            $281 Now
+          </h2>
+          <p class="fs-2 text-white text-center fw-bold">
+            Just Pay Once Instead Of Monthly
+          </p>
+        </div>
+
+        <!-- part2 -->
+        <div
+          class="text-white align-content-center p-3"
+          style="
+            width: 60%;
+            min-height: max-content;
+            border: 2px solid white;
+            background: linear-gradient(to right, yellow, red);
+            border-radius: 10px;
+          "
+        >
+          <a
+            class="text-decoration-none text-white fs-1 fw-bold text-center"
+            href=""
+            >Click Here Now To Get Started</a
+          >
+        </div>
+
+        <!-- part3 -->
+        <div class="d-flex justify-content-between p-5">
+          <div class="img-fluid">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fd855ee81bfa4c0099568536f98939192b19e41e3%2F180day2.png?auto=compress,format&fit=scale&w=521&h=126"
+              alt="img"
+            />
+          </div>
+          <div
+            class="black-box bg-black"
+            style="width: 200px; height: 100px"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- yellow -->
+    <section class="w-100 bg-warning" style="width: 100%; height: 80px">
+      <div class="" style="padding-inline: 200px">
+        <p class="text-black fs-4 fw-bold text-center pt-3 pb-3">
+          Free Commercial License + 1 Time Low Price ENDS When Timer Hits ZERO
+        </p>
+      </div>
+    </section>
+
+    <!-- My friends -->
+    <section
+      class="friend text-center pt-5"
+      style="width: 100%; height: 100%; padding-inline: 200px"
+    >
+      <div
+        class="card rounded-2 pt-5 w-75"
+        style="height: 200px; position: relative"
+      >
+        <div class="">
+          <h1 class="fs-1 text-danger fw-bold">
+            My Friends Called Me Delusional…
+          </h1>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
