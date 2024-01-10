@@ -77,7 +77,7 @@
       .header {
         background-color: rgb(14, 17, 45);
         max-height: min-content;
-        padding-inline: 250px;
+        /* padding-inline: 250px; */
       }
       .gradient {
         background: linear-gradient(to right, rgb(2, 70, 2), red);
@@ -94,6 +94,24 @@
         background-repeat: no-repeat;
         background-position: center center;
       }
+      .smart {
+        background-image: url(https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F82d3eef3e069589013b69b4e2694e87e86701a7c%2FAdobeStock_255529620.jpeg?auto=compress,format&fit=clip&w=1600);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .broadcast {
+        background-image: url(https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fafb767c74e1ed3d8a96ff9d312e7a2b4b95c0fa4%2Famr_abutalleb_dark_greenish_background_about_futuristic_one_cli_2bbe706f-0a82-4ed1-bb8b-34b6c54b7db4.png?auto=compress,format&mono=FF3DC8BC&fit=clip&w=1600);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .possible {
+        background-image: url(https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F06111b6719c24b5d85c628233ee83f73c35ed156%2Fgcd70fd3f5d4ece41367d8ababa5381ff2b93f8a0d34e08a9fc9c9a066622eb40f465e70da68c30e4ec50798bf16ca9f18d38d30192e81b47525c025090ee0fd3_1920.jpg?auto=compress,format&fit=clip&w=1600);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
       .overlay {
         background: rgba(7, 42, 64, 0.86);
         position: absolute;
@@ -102,6 +120,18 @@
         z-index: 1;
         bottom: 0;
         top: 0;
+      }
+
+      @media screen and (max-width: 500px) {
+        .market_container {
+          white-space: wrap;
+          font-size: 14px;
+        }
+        .people {
+          width: 200px;
+          height: 200px;
+          background-color: rgb(236, 214, 179);
+        }
       }
     </style>
     <style id="vvvebjs-styles"></style>
@@ -135,14 +165,22 @@
     ></script>
 
     <!-- header section1 -->
-    <section class="header">
+    <section class="header m-auto w-100">
       <div
         class="container-fluid d-flex flex-column justify-content-center align-items-center"
         style="margin-bottom: 200px"
       >
-        <div class="para1">
-          <div class="Neocast-img"></div>
-          <div class="Neocast_content">
+        <nav class="navbar">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img
+                class="bg-black"
+                src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F0149c5aa5ef34afe7ad6df9f8435852bed34bea9%2Flogo%20on%20dark.svg"
+                alt="Bootstrap"
+                width="300"
+                height="50"
+              />
+            </a>
             <div
               class="text-white d-flex justify-content-around align-content-center p-2"
               style="
@@ -159,8 +197,7 @@
               >
             </div>
           </div>
-        </div>
-
+        </nav>
         <!-- para2 -->
         <div
           class=""
@@ -234,10 +271,9 @@
       <div class="section2 d-flex flex-column align-items-center pb-5">
         <!-- part1 -->
         <div
-          class="part1 mb-5"
+          class="part1 mb-5 m-0 w-75"
           style="
             min-height: max-content;
-            width: 80%;
             border: 1px solid whitesmoke;
             border-radius: 50px;
           "
@@ -250,7 +286,7 @@
         </div>
 
         <!-- part2 -->
-        <div class="part2 align-items-center">
+        <div class="part2 align-items-center w-75">
           <div
             class="p-4"
             style="
@@ -338,18 +374,13 @@
 
     <!-- Page Content1 -->
 
-    <section class="">
+    <section class="w-100">
       <div
         class="gradient d-flex flex-column align-items-center"
-        style="
-          width: 100%;
-          min-height: max-content;
-          border: 2px solid wheat;
-          padding-inline: 200px;
-        "
+        style="width: 100%; min-height: max-content; border: 2px solid wheat"
       >
         <div class="pt-5 pb-3">
-          <h2 class="fs-1 text-white fw-bolder">
+          <h2 class="fs-1 text-white fw-bolder text-center">
             Get <span class="fs-1 text-white fw-lighter">Neo</span>Cast And Save
             $281 Now
           </h2>
@@ -360,9 +391,8 @@
 
         <!-- part2 -->
         <div
-          class="text-white align-content-center p-3"
+          class="text-white align-content-center w-50 m-auto p-3"
           style="
-            width: 60%;
             min-height: max-content;
             border: 2px solid white;
             background: linear-gradient(to right, yellow, red);
@@ -377,8 +407,8 @@
         </div>
 
         <!-- part3 -->
-        <div class="d-flex justify-content-between p-5">
-          <div class="img-fluid">
+        <div class="d-flex justify-content-between p-5 w-75 m-auto flex-wrap">
+          <div class="img-fluid w-50">
             <img
               src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fd855ee81bfa4c0099568536f98939192b19e41e3%2F180day2.png?auto=compress,format&fit=scale&w=521&h=126"
               alt="img"
@@ -393,9 +423,9 @@
     </section>
 
     <!-- yellow -->
-    <section class="w-100 bg-warning" style="width: 100%; height: 80px">
-      <div class="" style="padding-inline: 200px">
-        <p class="text-black fs-4 fw-bold text-center pt-3 pb-3">
+    <section class="w-100 bg-warning">
+      <div class="w-75 m-auto my-0">
+        <p class="text-black fs-4 fw-bold text-center py-3">
           Free Commercial License + 1 Time Low Price ENDS When Timer Hits ZERO
         </p>
       </div>
@@ -403,37 +433,47 @@
     <!--Marketers  -->
     <section
       class="w-100 bg-warning market"
-      style="width: 100%; height: 1400px; position: relative"
+      style="
+        width: 100%;
+        height: 1400px;
+        max-height: fit-content;
+        position: relative;
+      "
     >
       <div class="overlay">
         <div class="market_container mb-5">
           <div
             class="d-flex flex-column align-items-center justify-content-around mt-5 justify-content-center"
           >
-            <h2 class="fs-2 text-white">
+            <h2 class="fs-2 text-white text-center">
               NeoCast Is Used By 3,000+ Marketers WorldWide
             </h2>
 
-            <h1 class="fs-1 text-white fw-bolder">
+            <h1 class="fs-1 text-white fw-bolder text-center">
               To Create Their Tv-Channels And Get Millions Of Clicks…
             </h1>
 
-            <p class="fs-4 text-danger">And You Can Join Them In 10 Seconds</p>
+            <p class="fs-4 text-danger text-center">
+              And You Can Join Them In 10 Seconds
+            </p>
           </div>
         </div>
 
         <!-- people1 -->
         <div class="container-fluid mb-5" style="padding-inline: 50px">
-          <div class="d-flex justify-content-between flex-wrap">
+          <div
+            class="container-fluid d-flex justify-content-between flex-wrap w-100"
+          >
             <div
-              class="rounded p-4"
+              class="rounded p-4 people"
               style="
+                box-shadow: 1px -1px 7px 0px rgb(122, 184, 191);
                 width: 450px;
                 height: 450px;
-                background-color: rgb(39, 39, 65);
+                background-color: rgb(7, 42, 64);
               "
             >
-              <div class="img-fluid text-center p-2 mb-3">
+              <div class="text-center p-2 mb-3">
                 <img
                   src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fa563319719f911a911ffe4f909503c797a27555d%2Favatar-11091c507dc68aeb224d813fbf8c4dae.jpg?auto=compress,format&fit=scale&w=138&h=143"
                   alt="liam"
@@ -457,9 +497,10 @@
             <div
               class="rounded p-4"
               style="
+                box-shadow: 1px -1px 7px 0px rgb(122, 184, 191);
                 width: 450px;
                 height: 450px;
-                background-color: rgb(39, 39, 65);
+                background-color: rgb(7, 42, 64);
               "
             >
               <div class="img-fluid text-center p-2 mb-3">
@@ -487,9 +528,10 @@
             <div
               class="rounded p-4"
               style="
+                box-shadow: 1px -1px 7px 0px rgb(122, 184, 191);
                 width: 450px;
                 height: 450px;
-                background-color: rgb(39, 39, 65);
+                background-color: rgb(7, 42, 64);
               "
             >
               <div class="img-fluid text-center p-2 mb-3">
@@ -516,13 +558,16 @@
 
         <!-- people2 -->
         <div class="container-fluid mb-5" style="padding-inline: 50px">
-          <div class="d-flex justify-content-between flex-wrap">
+          <div
+            class="container-fluid d-flex justify-content-between flex-wrap w-100 h-100"
+          >
             <div
               class="rounded p-4"
               style="
+                box-shadow: 1px -1px 7px 0px rgb(122, 184, 191);
                 width: 450px;
                 height: 450px;
-                background-color: rgb(39, 39, 65);
+                background-color: rgb(7, 42, 64);
               "
             >
               <div class="img-fluid text-center p-2 mb-3">
@@ -551,7 +596,8 @@
               style="
                 width: 450px;
                 height: 450px;
-                background-color: rgb(39, 39, 65);
+                background-color: rgb(7, 42, 64);
+                box-shadow: 1px -1px 7px 0px rgb(122, 184, 191);
               "
             >
               <div class="img-fluid text-center p-2 mb-3">
@@ -579,9 +625,10 @@
             <div
               class="rounded p-4"
               style="
+                box-shadow: 1px -1px 7px 0px rgb(122, 184, 191);
                 width: 450px;
                 height: 450px;
-                background-color: rgb(39, 39, 65);
+                background-color: rgb(7, 42, 64);
               "
             >
               <div class="img-fluid text-center p-2 mb-3">
@@ -652,19 +699,14 @@
       </div>
     </section>
 
-    <!-- pagecontent2 -->
-    <section class="">
+    <!-- pagecontent2 -------------------->
+    <section class="w-100">
       <div
         class="gradient d-flex flex-column align-items-center"
-        style="
-          width: 100%;
-          min-height: max-content;
-          border: 2px solid wheat;
-          padding-inline: 200px;
-        "
+        style="width: 100%; min-height: max-content; border: 2px solid wheat"
       >
         <div class="pt-5 pb-3">
-          <h2 class="fs-1 text-white fw-bolder">
+          <h2 class="fs-1 text-white fw-bolder text-center">
             Get <span class="fs-1 text-white fw-lighter">Neo</span>Cast And Save
             $281 Now
           </h2>
@@ -675,9 +717,8 @@
 
         <!-- part2 -->
         <div
-          class="text-white align-content-center p-3"
+          class="text-white align-content-center w-50 m-auto p-3"
           style="
-            width: 60%;
             min-height: max-content;
             border: 2px solid white;
             background: linear-gradient(to right, yellow, red);
@@ -692,8 +733,8 @@
         </div>
 
         <!-- part3 -->
-        <div class="d-flex justify-content-between p-5">
-          <div class="img-fluid">
+        <div class="d-flex justify-content-between p-5 w-75 m-auto flex-wrap">
+          <div class="img-fluid w-50">
             <img
               src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fd855ee81bfa4c0099568536f98939192b19e41e3%2F180day2.png?auto=compress,format&fit=scale&w=521&h=126"
               alt="img"
@@ -708,27 +749,742 @@
     </section>
 
     <!-- yellow -->
-    <section class="w-100 bg-warning" style="width: 100%; height: 80px">
-      <div class="" style="padding-inline: 200px">
-        <p class="text-black fs-4 fw-bold text-center pt-3 pb-3">
+    <section class="w-100 bg-warning">
+      <div class="w-75 m-auto my-0">
+        <p class="text-black fs-4 fw-bold text-center py-3">
           Free Commercial License + 1 Time Low Price ENDS When Timer Hits ZERO
         </p>
       </div>
     </section>
-
-    <!-- My friends -->
-    <section
-      class="friend text-center pt-5"
-      style="width: 100%; height: 100%; padding-inline: 200px"
-    >
+    <!-- My friends ----------------->
+    <section class="friend p-5" style="width: 100%; min-height: max-content">
       <div
-        class="card rounded-2 pt-5 w-75"
-        style="height: 200px; position: relative"
+        class="card rounded-5 pt-5 w-50 m-auto"
+        style="min-height: max-content; position: relative"
       >
-        <div class="">
-          <h1 class="fs-1 text-danger fw-bold">
+        <div class="text-center">
+          <h1 class="text-danger fw-bold" style="font-size: 60px">
             My Friends Called Me Delusional…
           </h1>
+        </div>
+        <div class="para ps-5 pt-4">
+          <p class="fs-4 text-dark">
+            When I told them I want to own my TV channel…
+          </p>
+          <p class="fs-4 text-dark">Everyone laughed…</p>
+          <p class="fs-4 text-dark">
+            They didn’t know that there was a way to do it…
+          </p>
+          <p class="fs-4 text-dark">Without spending a dime…</p>
+          <p class="fs-4 text-dark">
+            And without streaming or creating any content…
+          </p>
+          <p class="fs-4 text-dark">
+            Once I did it, and showed them how much it’s making me…
+          </p>
+          <p class="fs-4 text-dark">
+            Everyone shut up… and asked me how to do it…
+          </p>
+        </div>
+        <div class="img-fluid m-auto">
+          <img
+            style="width: 100%"
+            src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F90935b28d940f0f82adc1ace05c08c088a40abf2%2F1.png?auto=compress,format&fit=scale&w=416&h=239"
+            alt="img"
+          />
+        </div>
+        <div class="para2 ps-5">
+          <p class="fs-4 text-dark">Yea…</p>
+          <p class="fs-4 text-dark">
+            That’s $39,549.23 we just made in the past 30 days alone…
+          </p>
+          <p class="fs-4 text-dark">And here is the best part…</p>
+          <p class="fs-4 text-dark">We didn’t spend a dime to make this…</p>
+          <p class="fs-4 text-dark">Meaning it’s all pure profit…</p>
+          <p class="fs-4 text-dark">And it gets better…</p>
+          <p class="fs-4 text-dark">
+            We don’t stream, or create any videos for these channels…
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dozens ----------------------->
+    <section class="dozen">
+      <div
+        class="dozen_container d-flex flex-column justify-content-between mb-5"
+      >
+        <div class="text-center p-5">
+          <h1 class="text-danger fw-bold" style="font-size: 60px">Now…</h1>
+          <h1 class="text-danger fw-bold" style="font-size: 60px">
+            I Own Dozens Of TV Channels
+          </h1>
+        </div>
+        <!-- part1 -->
+        <div
+          class="d-flex g-5 justify-content-center flex-wrap"
+          style="gap: 30px"
+        >
+          <div class="img-fluid">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F7a035bb20f62b6d9b92cc37a9ee04d20aa713408%2Famr_abutalleb_really_wealthy_and_rich_young_man_has_millions_of_36dd2eef-8a86-464e-b8af-42d0eede1056.png?auto=compress,format&fit=scale&w=460&h=460"
+              alt="img"
+              class="img-fluid"
+            />
+          </div>
+          <div class="para mt-5 mb-5">
+            <p class="fs-4 text-dark">Why wouldn’t I?</p>
+            <p class="fs-4 text-dark">It’s so easy to create…</p>
+            <p class="fs-4 text-dark">
+              All it takes is just 2 minutes and zero dollars…
+            </p>
+            <p class="fs-4 text-dark">
+              And it makes a ridiculous amount of money…
+            </p>
+            <p class="fs-4 text-dark">Each channel I create makes me</p>
+            <p class="fs-4 text-dark">hundreds of dollars every single day…</p>
+          </div>
+        </div>
+
+        <!-- money -->
+        <div class="img-fluid w-50 h-50" style="margin-inline: auto">
+          <img
+            class="text-center"
+            style="width: 100%"
+            src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fb08ff34be2e65a7469a80891934d952862e54c91%2F1.png?auto=compress,format&fit=scale&w=460&h=252"
+            alt="img"
+          />
+        </div>
+      </div>
+
+      <!-- part2 -->
+
+      <div
+        class="d-flex g-5 justify-content-center flex-wrap mb-5"
+        style="gap: 30px"
+      >
+        <div class="para">
+          <div class="">
+            <h1 class="text-danger fw-bold" style="font-size: 50px">
+              But It’s Not What
+            </h1>
+            <h1 class="text-danger fw-bold" style="font-size: 50px">
+              You Think…
+            </h1>
+          </div>
+          <p class="fs-4 text-dark mt-5">
+            As much as I want to be the next Bryan
+          </p>
+          <p class="fs-4 text-dark">Cranston (breaking bad, anyone?)</p>
+          <p class="fs-4 text-dark">But this is not what we are doing here…</p>
+          <br />
+          <p class="fs-4 text-dark">We are not running studios or making</p>
+          <p class="fs-4 text-dark">documentaries…</p>
+          <p class="fs-4 text-dark">
+            What we are doing is completely different…
+          </p>
+        </div>
+        <div class="img-fluid">
+          <img
+            src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F5a7fedc9d6288432e0578bccb8b1f7b84d607746%2F1.png?auto=compress,format&fit=scale&w=352&h=435"
+            alt="img"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+
+      <!-- part3 -->
+      <div
+        class="d-flex g-5 justify-content-center flex-wrap mb-5"
+        style="gap: 40px"
+      >
+        <div class="img-fluid mt-5">
+          <img
+            src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fc67e6b6501f69150a97f8921436caa80e7cb6349%2Famr_abutalleb_automated_process_separated_into_different_steps__c6f917b6-a8e6-4a22-8bf0-55d625981447-removebg-preview.png?auto=compress,format&fit=scale&w=368&h=368"
+            alt="img"
+            class="img-fluid"
+          />
+        </div>
+        <div class="para">
+          <div class="">
+            <h1 class="text-danger fw-bold" style="font-size: 50px">
+              It’s Even Better…
+            </h1>
+          </div>
+          <p class="fs-4 text-dark mt-5">
+            What we are doing is 100% automated…
+          </p>
+          <p class="fs-4 text-dark">We don’t create anything,</p>
+          <p class="fs-4 text-dark">we don’t pay for anything…</p>
+          <p class="fs-4 text-dark">We just copy a feed link that will</p>
+          <p class="fs-4 text-dark">run for us 24/7 in the background…</p>
+          <br />
+          <p class="fs-4 text-dark">Yup…</p>
+          <p class="fs-4 text-dark">documentaries…</p>
+          <p class="fs-4 text-dark">I told you, we do things differently…</p>
+          <p class="fs-4 text-dark">We leverage the power of Smart TVs like…</p>
+          <p class="fs-4 text-dark">
+            To make money on a daily basis WITHOUT any work…
+          </p>
+        </div>
+      </div>
+
+      <div class="img-fluid m-auto w-50 mb-5">
+        <img
+          class="w-100"
+          style="width: 100%"
+          src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F1439a56bd6604ea65b278e303764a7080bdcccff%2F1.png?auto=compress,format&fit=scale&w=494&h=283"
+          alt="img"
+        />
+      </div>
+
+      <!-- part4 -->
+
+      <div
+        class="d-flex g-5 justify-content-center flex-wrap mb-5"
+        style="gap: 30px"
+      >
+        <div class="para">
+          <div class="">
+            <h1 class="text-danger fw-bold" style="font-size: 50px">
+              We Are In The “AI”
+            </h1>
+            <h1 class="text-danger fw-bold" style="font-size: 50px">Age…</h1>
+          </div>
+          <p class="fs-4 text-dark mt-5">Doesn’t it seem like everything is</p>
+          <p class="fs-4 text-dark">automated with AI now?</p>
+          <p class="fs-4 text-dark">It’s true…</p>
+          <br />
+          <p class="fs-4 text-dark">And today, we for the first time…</p>
+          <p class="fs-4 text-dark">Introduced the power of AI…</p>
+          <p class="fs-4 text-dark">To the world of SmartTV business…</p>
+        </div>
+        <div class="img-fluid">
+          <img
+            src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F548cd6f3a0afc856c9ebbe64d76cfcd1f08f920a%2Famr_abutalleb_AI_Robot_taking_heroic_pose_white_background_blue_86efee53-e16d-4a0c-acac-7557a9ed82e1-removebg-preview.png?auto=compress,format&fit=scale&w=460&h=460"
+            alt="img"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+
+      <!-- para5 -->
+      <div
+        class="d-flex g-5 justify-content-center flex-wrap mb-5"
+        style="gap: 150px"
+      >
+        <div class="img-fluid" style="margin-top: 80px">
+          <img
+            src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fd882556dabd59af0b13e4f38d55ed9f39bcafeda%2Famr_abutalleb_billions_of_dollars_white_background_bfdeb7a1-9001-4ca6-966d-b31086c9575c-removebg-preview.png?auto=compress,format&fit=scale&w=460&h=460"
+            alt="img"
+            class="img-fluid"
+          />
+        </div>
+        <div class="para">
+          <div class="">
+            <h1 class="text-danger fw-bold" style="font-size: 50px">
+              Tap Into A $240
+            </h1>
+            <h1 class="text-danger fw-bold" style="font-size: 50px">
+              BILLION Market
+            </h1>
+          </div>
+          <p class="fs-4 text-dark mt-5">
+            This is your chance to tap into this
+          </p>
+          <p class="fs-4 text-dark">exploding market…</p>
+          <p class="fs-4 text-dark">Did you know that over 56% of the</p>
+          <p class="fs-4 text-dark">USA...</p>
+          <p class="fs-4 text-dark">Watches smart-tv daily?</p>
+
+          <p class="fs-4 text-dark">That’s over 200 million active</p>
+          <p class="fs-4 text-dark">viewers… DAILY…</p>
+          <br />
+          <p class="fs-4 text-dark">And that’s in the USA alone…</p>
+          <p class="fs-4 text-dark">Worldwide… it’s over a billion, my</p>
+          <p class="fs-4 text-dark">friend…</p>
+          <p class="fs-4 text-dark">And with NeoCast…</p>
+          <p class="fs-4 text-dark">You can tap into that untouched</p>
+          <p class="fs-4 text-dark mb-5">market with a click…</p>
+        </div>
+      </div>
+    </section>
+    <!--------------- Smart Tv--------------- -->
+
+    <section class="smart p-5" style="width: 100%; min-height: max-content">
+      <div
+        class="pt-5 w-50 m-auto"
+        style="min-height: max-content; position: relative"
+      >
+        <div class="text-center p-2">
+          <h1 class="text-danger fw-bold" style="font-size: 60px">
+            Dominate The Smart TV
+          </h1>
+          <h1 class="text-danger fw-bold" style="font-size: 60px">
+            Business With A Click…
+          </h1>
+        </div>
+        <div class="para ps-5 pt-4">
+          <p class="fs-4 text-white">That’s all that it takes…</p>
+          <p class="fs-4 text-white">With a click…</p>
+          <br />
+          <p class="fs-4 text-white">We start broadcasting TV channels in</p>
+          <p class="fs-4 text-white">any niche…</p>
+          <p class="fs-4 text-white">And start getting views and clicks</p>
+        </div>
+        <div class="img-fluid m-auto">
+          <img
+            style="width: 100%"
+            src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Ffbd4bc8c55044a719c746962e0636613c5f73395%2F1.png?auto=compress,format&fit=scale&w=614&h=321"
+            alt="img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!----------------Broadcast -->
+
+    <section class="broadcast p-5" style="width: 100%; min-height: max-content">
+      <div
+        class="rounded-5 p-5 w-75 m-auto"
+        style="
+          min-height: max-content;
+          position: relative;
+          background-color: rgba(0, 0, 0, 0.76);
+        "
+      >
+        <div class="text-center">
+          <h1 class="text-danger fw-bold" style="font-size: 50px">
+            1-Click Broadcast On
+          </h1>
+          <h1 class="text-danger fw-bold" style="font-size: 50px">
+            AmazonTV And RokuTV
+          </h1>
+        </div>
+        <div class="para ps-5 pt-4">
+          <p class="fs-4 text-white">
+            There are no limits and no restrictions…
+          </p>
+          <p class="fs-4 text-white">It’s as easy as ABC…</p>
+          <br />
+          <p class="fs-4 text-white">Just follow the fool-proof setup guide…</p>
+          <p class="fs-4 text-white">Which takes less than 2 minutes…</p>
+          <p class="fs-4 text-white">And you’re ready to get massive traffic</p>
+        </div>
+        <div class="img-fluid m-auto w-50">
+          <img
+            style="width: 100%"
+            src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F0a6d88890d8475f52a862b9d159a484bf67ebcec%2F1.png?auto=compress,format&fit=scale&w=331&h=250"
+            alt="img"
+          />
+        </div>
+      </div>
+    </section>
+    <!-------------What's possible ----------- -->
+    <section class="possible w-100" style="max-height: min-content">
+      <div
+        class="w-100 h-auto d-flex flex-column justify-content-between"
+        style="background-color: rgba(7, 23, 56, 0.8)"
+      >
+        <div class="text-center p-5">
+          <h1 class="text-danger fw-bold" style="font-size: 50px">
+            Here Is What’s Possible With
+          </h1>
+          <h1 class="text-danger fw-bold" style="font-size: 50px">NeoCast</h1>
+        </div>
+        <!-- part1 -->
+        <div
+          class="d-flex justify-content-center m-auto p-5 flex-wrap w-75 h-75"
+          style="gap: 30px"
+        >
+          <div class="img-fluid">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F705d72fca37b413856d28f6fc5cdbd4bf0db372c%2F1.png?auto=compress,format&fit=scale&w=148&h=166"
+              alt="img"
+              class="img-fluid"
+            />
+          </div>
+          <div class="para mb-5">
+            <h1 class="text-info fs-4 fw-bold mb-5">
+              1-Click Tv-Channel Creator
+            </h1>
+            <p class="fs-5 text-white">
+              Can you believe that creating your own TV channel is that easy?
+            </p>
+            <p class="fs-5 text-white">
+              That’s what’s possible with the power of AI my friend…
+            </p>
+            <p class="fs-5 text-white">
+              Just enter your niche and you will be up and running in less than
+              2
+            </p>
+            <p class="fs-5 text-white">minutes.</p>
+          </div>
+        </div>
+
+        <!-- -----------part2-------- -->
+        <div
+          class="d-flex justify-content-center flex-wrap mb-5 m-auto p-5 rounded-end-4"
+          style="
+            gap: 30px;
+            background-color: rgb(36, 36, 77);
+            min-height: max-content;
+          "
+        >
+          <div class="para">
+            <h1 class="text-info fs-4 fw-bold mb-4">DFY 24/7 Feed</h1>
+            <p class="fs-5 text-white">
+              Can you believe that creating your own TV channel is that easy?
+            </p>
+            <p class="fs-5 text-white">
+              That’s what’s possible with the power of AI my friend…
+            </p>
+            <p class="fs-5 text-white">
+              Just enter your niche and you will be up and running in less than
+              2
+            </p>
+            <p class="fs-5 text-white">minutes.</p>
+          </div>
+          <div class="img-fluid" style="width: 15%">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F1d6e40be01e34b514151d31350ebbc4435db5ad3%2F1.png?auto=compress,format&fit=scale&w=222&h=249"
+              alt="img"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <!-- part3 ---------------->
+        <div
+          class="d-flex justify-content-center m-auto p-5 flex-wrap w-75 h-75"
+          style="gap: 30px"
+        >
+          <div class="img-fluid" style="width: 15%">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F261ed2fe2e7efa0ef84e466b8f70b2f5831a117d%2F1.png?auto=compress,format&fit=scale&w=222&h=249"
+              alt="img"
+              class="img-fluid"
+            />
+          </div>
+          <div class="para mb-5">
+            <h1 class="text-info fs-4 fw-bold mb-5">
+              Built-In Viewer Generator
+            </h1>
+            <p class="fs-5 text-white">
+              There is zero marketing required with NeoCast…
+            </p>
+            <p class="fs-5 text-white">
+              It comes equipped with the best view-generation feature
+            </p>
+            <p class="fs-5 text-white">on the market…</p>
+            <p class="fs-5 text-white">
+              It will flood you with millions of views no matter what niche
+            </p>
+            <p class="fs-5 text-white">you are in.</p>
+          </div>
+        </div>
+
+        <!----------- part4----------->
+        <div
+          class="d-flex justify-content-center flex-wrap mb-5 m-auto p-5 rounded-end-4 rounded-bottom-4"
+          style="
+            gap: 30px;
+            background-color: rgb(36, 36, 77);
+            min-height: max-content;
+          "
+        >
+          <div class="para">
+            <h1 class="text-info fs-4 fw-bold mb-4">1-Click Branding</h1>
+            <p class="fs-5 text-white">
+              You are the only owner of your channel. You can blast
+            </p>
+            <p class="fs-5 text-white">
+              your own branding and logo over your channel…
+            </p>
+            <p class="fs-5 text-white">All it takes is just a click.</p>
+          </div>
+          <div class="img-fluid" style="width: 20%">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fc87105b2a1ff1b3acfc502ec32711e32339ff4ff%2F1.png?auto=compress,format&fit=scale&w=222&h=249"
+              alt="img"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <!-- --------- part5----------- -->
+        <div
+          class="d-flex justify-content-center m-auto p-5 flex-wrap w-75 h-75"
+          style="gap: 30px"
+        >
+          <div class="img-fluid" style="width: 15%">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F087c10c9600654d44e6ea366816bf4e43e1640c3%2F1.png?auto=compress,format&fit=scale&w=222&h=249"
+              alt="img"
+              class="img-fluid"
+            />
+          </div>
+          <div class="para mb-5">
+            <h1 class="text-info fs-4 fw-bold mb-5">No Streaming Technology</h1>
+            <p class="fs-5 text-white">
+              Forget all the heavy, buggy softwares that is needed to
+            </p>
+            <p class="fs-5 text-white">stream anything online…</p>
+            <p class="fs-5 text-white">All of that is gone with NeoCast.</p>
+            <p class="fs-5 text-white">
+              It runs in the background. So you don’t have to install or run
+            </p>
+            <p class="fs-5 text-white">anything.</p>
+          </div>
+        </div>
+
+        <!-- -------part6------- -->
+        <div
+          class="d-flex justify-content-center flex-wrap mb-5 m-auto p-5 rounded-end-4 rounded-bottom-4"
+          style="
+            gap: 30px;
+            background-color: rgb(36, 36, 77);
+            min-height: max-content;
+          "
+        >
+          <div class="para">
+            <h1 class="text-info fs-4 fw-bold mb-4">AI Audience Selector</h1>
+            <p class="fs-5 text-white">
+              You don’t have to do any research with NeoCast…
+            </p>
+            <p class="fs-5 text-white">
+              Just enter what niche you want to explore…
+            </p>
+            <p class="fs-5 text-white">
+              And it will automatically match you with millions of
+            </p>
+            <p class="fs-5 text-white">laser-targeted users</p>
+          </div>
+          <div class="img-fluid" style="width: 20%">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F334099a868bbf875df77412b377dd0b790ccb91c%2F1.png?auto=compress,format&fit=scale&w=222&h=249"
+              alt="img"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <!-- --------part7-------- -->
+        <div
+          class="d-flex justify-content-center m-auto p-5 flex-wrap w-75 h-75"
+          style="gap: 30px"
+        >
+          <div class="img-fluid" style="width: 15%">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F3c5bf25ea873331e750b1c2cc61d2c68bf3b6d2f%2F1.png?auto=compress,format&fit=scale&w=222&h=249"
+              alt="img"
+              class="img-fluid"
+            />
+          </div>
+          <div class="para mb-5">
+            <h1 class="text-info fs-4 fw-bold mb-5">1-Click Embed Anywhere</h1>
+            <p class="fs-5 text-white">
+              You can embed your channel feed on any website or
+            </p>
+            <p class="fs-5 text-white">platform you want.</p>
+            <p class="fs-5 text-white">
+              Just copy 1 line of code (no need to hire an expert)
+            </p>
+            <p class="fs-5 text-white">And you’re good to go</p>
+          </div>
+        </div>
+
+        <!-- -----------part8 -------->
+        <div
+          class="d-flex justify-content-center flex-wrap mb-5 m-auto p-5 rounded-end-4 rounded-bottom-4"
+          style="
+            gap: 30px;
+            background-color: rgb(36, 36, 77);
+            min-height: max-content;
+          "
+        >
+          <div class="para">
+            <h1 class="text-info fs-4 fw-bold mb-4">Responsive Optin Forms</h1>
+            <p class="fs-5 text-white">
+              Easily build your list and collect red-hot targeted leads
+            </p>
+            <p class="fs-5 text-white">
+              With responsive and shareable opt-in forms
+            </p>
+            <p class="fs-5 text-white">
+              Choose from 50+ templates that work in any niche.
+            </p>
+          </div>
+          <div class="img-fluid" style="width: 20%">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2Fc814f47d65bcc02aebea6bdb196fc35d18aba636%2F1.png?auto=compress,format&fit=scale&w=222&h=249"
+              alt="img"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <!--------------part9 -->
+        <div
+          class="d-flex justify-content-center m-auto p-5 flex-wrap w-75 h-75"
+          style="gap: 30px"
+        >
+          <div class="img-fluid" style="width: 15%">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F18e501887bbaba35cb07b7ea6057a22f57fb7b82%2F1.png?auto=compress,format&fit=scale&w=222&h=249"
+              alt="img"
+              class="img-fluid"
+            />
+          </div>
+          <div class="para mb-5">
+            <h1 class="text-info fs-4 fw-bold mb-5">Seamless AR Integration</h1>
+            <p class="fs-5 text-white">
+              NeoCast integrates with any AutoResponder of your
+            </p>
+            <p class="fs-5 text-white">choice…</p>
+            <p class="fs-5 text-white">
+              Just follow the fool-proof steps, and you will be up
+            </p>
+            <p class="fs-5 text-white">and running in seconds.</p>
+          </div>
+        </div>
+
+        <!-- -----------part10-------->
+        <div
+          class="d-flex justify-content-center flex-wrap mb-5 m-auto p-5 rounded-end-4 rounded-bottom-4"
+          style="
+            gap: 30px;
+            background-color: rgb(36, 36, 77);
+            min-height: max-content;
+          "
+        >
+          <div class="para">
+            <h1 class="text-info fs-4 fw-bold">Built-In PayPal And Payment</h1>
+            <h1 class="text-info fs-4 fw-bold mb-4">Processing</h1>
+            <p class="fs-5 text-white">
+              Collect payments directly from your viewers with
+            </p>
+            <p class="fs-5 text-white">
+              our easy-to-integrate payment processors.
+            </p>
+          </div>
+          <div class="img-fluid" style="width: 20%">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F183cbece802f0ca41c42d7fd51c81dd3a6229157%2F8.png?auto=compress,format&fit=scale&w=222&h=249"
+              alt="img"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <!--------------part11 -->
+        <div
+          class="d-flex justify-content-center m-auto p-5 flex-wrap w-75 h-75"
+          style="gap: 30px"
+        >
+          <div class="img-fluid" style="width: 15%">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F938c294ca2cf804beb6cc896951a81014c7c3a3b%2F7.png?auto=compress,format&fit=scale&w=210&h=223"
+              alt="img"
+              class="img-fluid"
+            />
+          </div>
+          <div class="para mb-5">
+            <h1 class="text-info fs-4 fw-bold">1-Click Host On FireTV And</h1>
+            <h1 class="text-info fs-4 fw-bold mb-5">Roku TV</h1>
+            <p class="fs-5 text-white">
+              NeoCast is the only app on the marketplace that
+            </p>
+            <p class="fs-5 text-white">
+              allows you to host your AI-Generated channels
+            </p>
+            <p class="fs-5 text-white">On both FireTV and RokuTv</p>
+            <p class="fs-5 text-white">To get even more views and clicks…</p>
+            <p class="fs-5 text-white">We are talking about millions extra.</p>
+          </div>
+        </div>
+
+        <!-- -----------part12-------->
+        <div
+          class="d-flex justify-content-center flex-wrap mb-5 m-auto p-5 rounded-end-4 rounded-bottom-4"
+          style="
+            gap: 30px;
+            background-color: rgb(36, 36, 77);
+            min-height: max-content;
+          "
+        >
+          <div class="para">
+            <h1 class="text-info fs-4 fw-bold mb-5">
+              DFY “HightTicket” Offers…
+            </h1>
+            <p class="fs-5 text-white">Don’t have something to promote?</p>
+            <p class="fs-5 text-white">
+              NeoCast got you covered, leverage our DFY high-
+            </p>
+            <p class="fs-5 text-white">paying offers</p>
+            <p class="fs-5 text-white">And earn up to $997 per referral…</p>
+            <p class="fs-5 text-white">It's as easy as copying & paste</p>
+          </div>
+          <div class="img-fluid">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F8b2f5dcdac5df3a981fdff22e11b8fe03820cb42%2F6.png?auto=compress,format&fit=scale&w=222&h=249"
+              alt="img"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <!--------------part13 -->
+        <div
+          class="d-flex justify-content-center m-auto p-5 flex-wrap w-75 h-75"
+          style="gap: 30px"
+        >
+          <div class="img-fluid" style="width: 15%">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F938c294ca2cf804beb6cc896951a81014c7c3a3b%2F7.png?auto=compress,format&fit=scale&w=210&h=223"
+              alt="img"
+              class="img-fluid"
+            />
+          </div>
+          <div class="para mb-5">
+            <h1 class="text-info fs-4 fw-bold mb-5">Instant Monetization </h1>
+            <p class="fs-5 text-white">
+              With just one click, you can add any link you want 
+            </p>
+            <p class="fs-5 text-white">
+              to promote… 
+            </p>
+            <p class="fs-5 text-white">And broadcast it to millions of views… </p>
+            <p class="fs-5 text-white">And start getting massive buyer clicks.</p>
+            
+          </div>
+        </div>
+
+        <!-- -----------part14-------->
+        <div
+          class="d-flex justify-content-center flex-wrap mb-5 m-auto p-5 rounded-end-4 rounded-bottom-4"
+          style="
+            gap: 30px;
+            background-color: rgb(36, 36, 77);
+            min-height: max-content;
+          "
+        >
+          <div class="para">
+            <h1 class="text-info fs-4 fw-bold">Built-In PayPal And Payment</h1>
+            <h1 class="text-info fs-4 fw-bold mb-4">Processing</h1>
+            <p class="fs-5 text-white">
+              Collect payments directly from your viewers with
+            </p>
+            <p class="fs-5 text-white">
+              our easy-to-integrate payment processors.
+            </p>
+          </div>
+          <div class="img-fluid" style="width: 20%">
+            <img
+              src="https://convertri.imgix.net/21900ed4-fe2a-11e8-bb43-0602f87a6cd8%2F183cbece802f0ca41c42d7fd51c81dd3a6229157%2F8.png?auto=compress,format&fit=scale&w=222&h=249"
+              alt="img"
+              class="img-fluid"
+            />
+          </div>
         </div>
       </div>
     </section>
